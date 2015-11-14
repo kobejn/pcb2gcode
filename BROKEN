@@ -1,0 +1,433 @@
+make
+make  all-recursive
+make[1]: Entering directory '/home/pcb2gcode/pcb2gcode'
+Making all in man
+make[2]: Entering directory '/home/pcb2gcode/pcb2gcode/man'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/pcb2gcode/pcb2gcode/man'
+make[2]: Entering directory '/home/pcb2gcode/pcb2gcode'
+g++ -DHAVE_CONFIG_H -I.   -I/usr/include/glibmm-2.4 -I/usr/lib/glibmm-2.4/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/sigc++-2.0 -I/usr/lib/sigc++-2.0/include -pthread -I/usr/include/gdkmm-2.4 -I/usr/lib/gdkmm-2.4/include -I/usr/include/giomm-2.4 -I/usr/lib/giomm-2.4/include -I/usr/include/pangomm-1.4 -I/usr/lib/pangomm-1.4/include -I/usr/include/glibmm-2.4 -I/usr/lib/glibmm-2.4/include -I/usr/include/cairomm-1.0 -I/usr/lib/cairomm-1.0/include -I/usr/include/sigc++-2.0 -I/usr/lib/sigc++-2.0/include -I/usr/include/gtk-2.0 -I/usr/lib/gtk-2.0/include -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/libdrm -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libpng16 -I/usr/include/pango-1.0 -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -pthread -I/usr/include/gerbv-2.6A -I/usr/include/gtk-2.0 -I/usr/lib/gtk-2.0/include -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/libdrm -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libpng16 -I/usr/include/pango-1.0 -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -std=c++11   -g -O2 -MT autoleveller.o -MD -MP -MF .deps/autoleveller.Tpo -c -o autoleveller.o autoleveller.cpp
+mv -f .deps/autoleveller.Tpo .deps/autoleveller.Po
+g++ -DHAVE_CONFIG_H -I.   -I/usr/include/glibmm-2.4 -I/usr/lib/glibmm-2.4/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/sigc++-2.0 -I/usr/lib/sigc++-2.0/include -pthread -I/usr/include/gdkmm-2.4 -I/usr/lib/gdkmm-2.4/include -I/usr/include/giomm-2.4 -I/usr/lib/giomm-2.4/include -I/usr/include/pangomm-1.4 -I/usr/lib/pangomm-1.4/include -I/usr/include/glibmm-2.4 -I/usr/lib/glibmm-2.4/include -I/usr/include/cairomm-1.0 -I/usr/lib/cairomm-1.0/include -I/usr/include/sigc++-2.0 -I/usr/lib/sigc++-2.0/include -I/usr/include/gtk-2.0 -I/usr/lib/gtk-2.0/include -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/libdrm -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libpng16 -I/usr/include/pango-1.0 -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -pthread -I/usr/include/gerbv-2.6A -I/usr/include/gtk-2.0 -I/usr/lib/gtk-2.0/include -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/libdrm -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libpng16 -I/usr/include/pango-1.0 -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -std=c++11   -g -O2 -MT svg_exporter.o -MD -MP -MF .deps/svg_exporter.Tpo -c -o svg_exporter.o svg_exporter.cpp
+In file included from board.hpp:46:0,
+                 from exporter.hpp:37,
+                 from svg_exporter.hpp:47,
+                 from svg_exporter.cpp:28:
+surface.hpp:63:32: error: template argument 1 is invalid
+     vector<shared_ptr<icoords> > get_toolpath(shared_ptr<RoutingMill> mill,
+                                ^
+surface.hpp:63:32: error: template argument 2 is invalid
+surface.hpp:63:47: error: reference to ‘shared_ptr’ is ambiguous
+     vector<shared_ptr<icoords> > get_toolpath(shared_ptr<RoutingMill> mill,
+                                               ^
+In file included from /usr/include/boost/throw_exception.hpp:42:0,
+                 from /usr/include/boost/smart_ptr/shared_ptr.hpp:27,
+                 from /usr/include/boost/shared_ptr.hpp:17,
+                 from svg_exporter.hpp:34,
+                 from svg_exporter.cpp:28:
+/usr/include/boost/exception/exception.hpp:148:11: note: candidates are: template<class T> class boost::shared_ptr
+     class shared_ptr;
+           ^
+In file included from /usr/include/c++/5.2.0/bits/shared_ptr.h:52:0,
+                 from /usr/include/c++/5.2.0/memory:82,
+                 from /usr/include/boost/config/no_tr1/memory.hpp:21,
+                 from /usr/include/boost/smart_ptr/shared_ptr.hpp:23,
+                 from /usr/include/boost/shared_ptr.hpp:17,
+                 from svg_exporter.hpp:34,
+                 from svg_exporter.cpp:28:
+/usr/include/c++/5.2.0/bits/shared_ptr_base.h:345:11: note:                 template<class _Tp> class std::shared_ptr
+     class shared_ptr;
+           ^
+In file included from board.hpp:46:0,
+                 from exporter.hpp:37,
+                 from svg_exporter.hpp:47,
+                 from svg_exporter.cpp:28:
+surface.hpp:63:47: error: ‘shared_ptr’ has not been declared
+     vector<shared_ptr<icoords> > get_toolpath(shared_ptr<RoutingMill> mill,
+                                               ^
+surface.hpp:63:57: error: expected ‘,’ or ‘...’ before ‘<’ token
+     vector<shared_ptr<icoords> > get_toolpath(shared_ptr<RoutingMill> mill,
+                                                         ^
+surface.hpp:65:39: error: reference to ‘shared_ptr’ is ambiguous
+     vector<unsigned int> get_bridges( shared_ptr<Cutter> cutter, shared_ptr<icoords> toolpath )
+                                       ^
+In file included from /usr/include/boost/throw_exception.hpp:42:0,
+                 from /usr/include/boost/smart_ptr/shared_ptr.hpp:27,
+                 from /usr/include/boost/shared_ptr.hpp:17,
+                 from svg_exporter.hpp:34,
+                 from svg_exporter.cpp:28:
+/usr/include/boost/exception/exception.hpp:148:11: note: candidates are: template<class T> class boost::shared_ptr
+     class shared_ptr;
+           ^
+In file included from /usr/include/c++/5.2.0/bits/shared_ptr.h:52:0,
+                 from /usr/include/c++/5.2.0/memory:82,
+                 from /usr/include/boost/config/no_tr1/memory.hpp:21,
+                 from /usr/include/boost/smart_ptr/shared_ptr.hpp:23,
+                 from /usr/include/boost/shared_ptr.hpp:17,
+                 from svg_exporter.hpp:34,
+                 from svg_exporter.cpp:28:
+/usr/include/c++/5.2.0/bits/shared_ptr_base.h:345:11: note:                 template<class _Tp> class std::shared_ptr
+     class shared_ptr;
+           ^
+In file included from board.hpp:46:0,
+                 from exporter.hpp:37,
+                 from svg_exporter.hpp:47,
+                 from svg_exporter.cpp:28:
+surface.hpp:65:39: error: ‘shared_ptr’ has not been declared
+     vector<unsigned int> get_bridges( shared_ptr<Cutter> cutter, shared_ptr<icoords> toolpath )
+                                       ^
+surface.hpp:65:49: error: expected ‘,’ or ‘...’ before ‘<’ token
+     vector<unsigned int> get_bridges( shared_ptr<Cutter> cutter, shared_ptr<icoords> toolpath )
+                                                 ^
+surface.hpp:77:19: error: reference to ‘shared_ptr’ is ambiguous
+     void add_mask(shared_ptr<Surface>);
+                   ^
+In file included from /usr/include/boost/throw_exception.hpp:42:0,
+                 from /usr/include/boost/smart_ptr/shared_ptr.hpp:27,
+                 from /usr/include/boost/shared_ptr.hpp:17,
+                 from svg_exporter.hpp:34,
+                 from svg_exporter.cpp:28:
+/usr/include/boost/exception/exception.hpp:148:11: note: candidates are: template<class T> class boost::shared_ptr
+     class shared_ptr;
+           ^
+In file included from /usr/include/c++/5.2.0/bits/shared_ptr.h:52:0,
+                 from /usr/include/c++/5.2.0/memory:82,
+                 from /usr/include/boost/config/no_tr1/memory.hpp:21,
+                 from /usr/include/boost/smart_ptr/shared_ptr.hpp:23,
+                 from /usr/include/boost/shared_ptr.hpp:17,
+                 from svg_exporter.hpp:34,
+                 from svg_exporter.cpp:28:
+/usr/include/c++/5.2.0/bits/shared_ptr_base.h:345:11: note:                 template<class _Tp> class std::shared_ptr
+     class shared_ptr;
+           ^
+In file included from board.hpp:46:0,
+                 from exporter.hpp:37,
+                 from svg_exporter.hpp:47,
+                 from svg_exporter.cpp:28:
+surface.hpp:77:19: error: ‘shared_ptr’ has not been declared
+     void add_mask(shared_ptr<Surface>);
+                   ^
+surface.hpp:77:29: error: expected ‘,’ or ‘...’ before ‘<’ token
+     void add_mask(shared_ptr<Surface>);
+                             ^
+In file included from board.hpp:47:0,
+                 from exporter.hpp:37,
+                 from svg_exporter.hpp:47,
+                 from svg_exporter.cpp:28:
+layer.hpp:42:31: error: reference to ‘shared_ptr’ is ambiguous
+     Layer(const string& name, shared_ptr<Surface> surface,
+                               ^
+In file included from /usr/include/boost/throw_exception.hpp:42:0,
+                 from /usr/include/boost/smart_ptr/shared_ptr.hpp:27,
+                 from /usr/include/boost/shared_ptr.hpp:17,
+                 from svg_exporter.hpp:34,
+                 from svg_exporter.cpp:28:
+/usr/include/boost/exception/exception.hpp:148:11: note: candidates are: template<class T> class boost::shared_ptr
+     class shared_ptr;
+           ^
+In file included from /usr/include/c++/5.2.0/bits/shared_ptr.h:52:0,
+                 from /usr/include/c++/5.2.0/memory:82,
+                 from /usr/include/boost/config/no_tr1/memory.hpp:21,
+                 from /usr/include/boost/smart_ptr/shared_ptr.hpp:23,
+                 from /usr/include/boost/shared_ptr.hpp:17,
+                 from svg_exporter.hpp:34,
+                 from svg_exporter.cpp:28:
+/usr/include/c++/5.2.0/bits/shared_ptr_base.h:345:11: note:                 template<class _Tp> class std::shared_ptr
+     class shared_ptr;
+           ^
+In file included from board.hpp:47:0,
+                 from exporter.hpp:37,
+                 from svg_exporter.hpp:47,
+                 from svg_exporter.cpp:28:
+layer.hpp:42:31: error: ‘shared_ptr’ has not been declared
+     Layer(const string& name, shared_ptr<Surface> surface,
+                               ^
+layer.hpp:42:41: error: expected ‘,’ or ‘...’ before ‘<’ token
+     Layer(const string& name, shared_ptr<Surface> surface,
+                                         ^
+layer.hpp:46:32: error: template argument 1 is invalid
+     vector<shared_ptr<icoords> > get_toolpaths();
+                                ^
+layer.hpp:46:32: error: template argument 2 is invalid
+layer.hpp:47:5: error: reference to ‘shared_ptr’ is ambiguous
+     shared_ptr<RoutingMill> get_manufacturer();
+     ^
+In file included from /usr/include/boost/throw_exception.hpp:42:0,
+                 from /usr/include/boost/smart_ptr/shared_ptr.hpp:27,
+                 from /usr/include/boost/shared_ptr.hpp:17,
+                 from svg_exporter.hpp:34,
+                 from svg_exporter.cpp:28:
+/usr/include/boost/exception/exception.hpp:148:11: note: candidates are: template<class T> class boost::shared_ptr
+     class shared_ptr;
+           ^
+In file included from /usr/include/c++/5.2.0/bits/shared_ptr.h:52:0,
+                 from /usr/include/c++/5.2.0/memory:82,
+                 from /usr/include/boost/config/no_tr1/memory.hpp:21,
+                 from /usr/include/boost/smart_ptr/shared_ptr.hpp:23,
+                 from /usr/include/boost/shared_ptr.hpp:17,
+                 from svg_exporter.hpp:34,
+                 from svg_exporter.cpp:28:
+/usr/include/c++/5.2.0/bits/shared_ptr_base.h:345:11: note:                 template<class _Tp> class std::shared_ptr
+     class shared_ptr;
+           ^
+In file included from board.hpp:47:0,
+                 from exporter.hpp:37,
+                 from svg_exporter.hpp:47,
+                 from svg_exporter.cpp:28:
+layer.hpp:48:39: error: reference to ‘shared_ptr’ is ambiguous
+     vector<unsigned int> get_bridges( shared_ptr<icoords> toolpath );
+                                       ^
+In file included from /usr/include/boost/throw_exception.hpp:42:0,
+                 from /usr/include/boost/smart_ptr/shared_ptr.hpp:27,
+                 from /usr/include/boost/shared_ptr.hpp:17,
+                 from svg_exporter.hpp:34,
+                 from svg_exporter.cpp:28:
+/usr/include/boost/exception/exception.hpp:148:11: note: candidates are: template<class T> class boost::shared_ptr
+     class shared_ptr;
+           ^
+In file included from /usr/include/c++/5.2.0/bits/shared_ptr.h:52:0,
+                 from /usr/include/c++/5.2.0/memory:82,
+                 from /usr/include/boost/config/no_tr1/memory.hpp:21,
+                 from /usr/include/boost/smart_ptr/shared_ptr.hpp:23,
+                 from /usr/include/boost/shared_ptr.hpp:17,
+                 from svg_exporter.hpp:34,
+                 from svg_exporter.cpp:28:
+/usr/include/c++/5.2.0/bits/shared_ptr_base.h:345:11: note:                 template<class _Tp> class std::shared_ptr
+     class shared_ptr;
+           ^
+In file included from board.hpp:47:0,
+                 from exporter.hpp:37,
+                 from svg_exporter.hpp:47,
+                 from svg_exporter.cpp:28:
+layer.hpp:48:39: error: ‘shared_ptr’ has not been declared
+     vector<unsigned int> get_bridges( shared_ptr<icoords> toolpath );
+                                       ^
+layer.hpp:48:49: error: expected ‘,’ or ‘...’ before ‘<’ token
+     vector<unsigned int> get_bridges( shared_ptr<icoords> toolpath );
+                                                 ^
+layer.hpp:54:19: error: reference to ‘shared_ptr’ is ambiguous
+     void add_mask(shared_ptr<Layer>);
+                   ^
+In file included from /usr/include/boost/throw_exception.hpp:42:0,
+                 from /usr/include/boost/smart_ptr/shared_ptr.hpp:27,
+                 from /usr/include/boost/shared_ptr.hpp:17,
+                 from svg_exporter.hpp:34,
+                 from svg_exporter.cpp:28:
+/usr/include/boost/exception/exception.hpp:148:11: note: candidates are: template<class T> class boost::shared_ptr
+     class shared_ptr;
+           ^
+In file included from /usr/include/c++/5.2.0/bits/shared_ptr.h:52:0,
+                 from /usr/include/c++/5.2.0/memory:82,
+                 from /usr/include/boost/config/no_tr1/memory.hpp:21,
+                 from /usr/include/boost/smart_ptr/shared_ptr.hpp:23,
+                 from /usr/include/boost/shared_ptr.hpp:17,
+                 from svg_exporter.hpp:34,
+                 from svg_exporter.cpp:28:
+/usr/include/c++/5.2.0/bits/shared_ptr_base.h:345:11: note:                 template<class _Tp> class std::shared_ptr
+     class shared_ptr;
+           ^
+In file included from board.hpp:47:0,
+                 from exporter.hpp:37,
+                 from svg_exporter.hpp:47,
+                 from svg_exporter.cpp:28:
+layer.hpp:54:19: error: ‘shared_ptr’ has not been declared
+     void add_mask(shared_ptr<Layer>);
+                   ^
+layer.hpp:54:29: error: expected ‘,’ or ‘...’ before ‘<’ token
+     void add_mask(shared_ptr<Layer>);
+                             ^
+layer.hpp:60:5: error: reference to ‘shared_ptr’ is ambiguous
+     shared_ptr<Surface> surface;
+     ^
+In file included from /usr/include/boost/throw_exception.hpp:42:0,
+                 from /usr/include/boost/smart_ptr/shared_ptr.hpp:27,
+                 from /usr/include/boost/shared_ptr.hpp:17,
+                 from svg_exporter.hpp:34,
+                 from svg_exporter.cpp:28:
+/usr/include/boost/exception/exception.hpp:148:11: note: candidates are: template<class T> class boost::shared_ptr
+     class shared_ptr;
+           ^
+In file included from /usr/include/c++/5.2.0/bits/shared_ptr.h:52:0,
+                 from /usr/include/c++/5.2.0/memory:82,
+                 from /usr/include/boost/config/no_tr1/memory.hpp:21,
+                 from /usr/include/boost/smart_ptr/shared_ptr.hpp:23,
+                 from /usr/include/boost/shared_ptr.hpp:17,
+                 from svg_exporter.hpp:34,
+                 from svg_exporter.cpp:28:
+/usr/include/c++/5.2.0/bits/shared_ptr_base.h:345:11: note:                 template<class _Tp> class std::shared_ptr
+     class shared_ptr;
+           ^
+In file included from board.hpp:47:0,
+                 from exporter.hpp:37,
+                 from svg_exporter.hpp:47,
+                 from svg_exporter.cpp:28:
+layer.hpp:61:5: error: reference to ‘shared_ptr’ is ambiguous
+     shared_ptr<RoutingMill> manufacturer;
+     ^
+In file included from /usr/include/boost/throw_exception.hpp:42:0,
+                 from /usr/include/boost/smart_ptr/shared_ptr.hpp:27,
+                 from /usr/include/boost/shared_ptr.hpp:17,
+                 from svg_exporter.hpp:34,
+                 from svg_exporter.cpp:28:
+/usr/include/boost/exception/exception.hpp:148:11: note: candidates are: template<class T> class boost::shared_ptr
+     class shared_ptr;
+           ^
+In file included from /usr/include/c++/5.2.0/bits/shared_ptr.h:52:0,
+                 from /usr/include/c++/5.2.0/memory:82,
+                 from /usr/include/boost/config/no_tr1/memory.hpp:21,
+                 from /usr/include/boost/smart_ptr/shared_ptr.hpp:23,
+                 from /usr/include/boost/shared_ptr.hpp:17,
+                 from svg_exporter.hpp:34,
+                 from svg_exporter.cpp:28:
+/usr/include/c++/5.2.0/bits/shared_ptr_base.h:345:11: note:                 template<class _Tp> class std::shared_ptr
+     class shared_ptr;
+           ^
+In file included from exporter.hpp:37:0,
+                 from svg_exporter.hpp:47,
+                 from svg_exporter.cpp:28:
+board.hpp:65:41: error: reference to ‘shared_ptr’ is ambiguous
+     void prepareLayer(string layername, shared_ptr<LayerImporter> importer,
+                                         ^
+In file included from /usr/include/boost/throw_exception.hpp:42:0,
+                 from /usr/include/boost/smart_ptr/shared_ptr.hpp:27,
+                 from /usr/include/boost/shared_ptr.hpp:17,
+                 from svg_exporter.hpp:34,
+                 from svg_exporter.cpp:28:
+/usr/include/boost/exception/exception.hpp:148:11: note: candidates are: template<class T> class boost::shared_ptr
+     class shared_ptr;
+           ^
+In file included from /usr/include/c++/5.2.0/bits/shared_ptr.h:52:0,
+                 from /usr/include/c++/5.2.0/memory:82,
+                 from /usr/include/boost/config/no_tr1/memory.hpp:21,
+                 from /usr/include/boost/smart_ptr/shared_ptr.hpp:23,
+                 from /usr/include/boost/shared_ptr.hpp:17,
+                 from svg_exporter.hpp:34,
+                 from svg_exporter.cpp:28:
+/usr/include/c++/5.2.0/bits/shared_ptr_base.h:345:11: note:                 template<class _Tp> class std::shared_ptr
+     class shared_ptr;
+           ^
+In file included from exporter.hpp:37:0,
+                 from svg_exporter.hpp:47,
+                 from svg_exporter.cpp:28:
+board.hpp:65:41: error: ‘shared_ptr’ has not been declared
+     void prepareLayer(string layername, shared_ptr<LayerImporter> importer,
+                                         ^
+board.hpp:65:51: error: expected ‘,’ or ‘...’ before ‘<’ token
+     void prepareLayer(string layername, shared_ptr<LayerImporter> importer,
+                                                   ^
+board.hpp:78:5: error: reference to ‘shared_ptr’ is ambiguous
+     shared_ptr<Layer> get_layer(string layername);
+     ^
+In file included from /usr/include/boost/throw_exception.hpp:42:0,
+                 from /usr/include/boost/smart_ptr/shared_ptr.hpp:27,
+                 from /usr/include/boost/shared_ptr.hpp:17,
+                 from svg_exporter.hpp:34,
+                 from svg_exporter.cpp:28:
+/usr/include/boost/exception/exception.hpp:148:11: note: candidates are: template<class T> class boost::shared_ptr
+     class shared_ptr;
+           ^
+In file included from /usr/include/c++/5.2.0/bits/shared_ptr.h:52:0,
+                 from /usr/include/c++/5.2.0/memory:82,
+                 from /usr/include/boost/config/no_tr1/memory.hpp:21,
+                 from /usr/include/boost/smart_ptr/shared_ptr.hpp:23,
+                 from /usr/include/boost/shared_ptr.hpp:17,
+                 from svg_exporter.hpp:34,
+                 from svg_exporter.cpp:28:
+/usr/include/c++/5.2.0/bits/shared_ptr_base.h:345:11: note:                 template<class _Tp> class std::shared_ptr
+     class shared_ptr;
+           ^
+In file included from exporter.hpp:37:0,
+                 from svg_exporter.hpp:47,
+                 from svg_exporter.cpp:28:
+board.hpp:79:32: error: template argument 1 is invalid
+     vector<shared_ptr<icoords> > get_toolpath(string layername);
+                                ^
+board.hpp:79:32: error: template argument 2 is invalid
+board.hpp:104:13: error: reference to ‘tuple’ is ambiguous
+     typedef tuple<shared_ptr<LayerImporter>, shared_ptr<RoutingMill>, bool, bool> prep_t;
+             ^
+In file included from /usr/include/boost/tuple/tuple.hpp:28:0,
+                 from /usr/include/boost/geometry/policies/relate/tupled.hpp:15,
+                 from /usr/include/boost/geometry/strategies/intersection.hpp:17,
+                 from /usr/include/boost/geometry/strategies/strategies.hpp:31,
+                 from /usr/include/boost/geometry/geometry.hpp:50,
+                 from /usr/include/boost/geometry.hpp:17,
+                 from coord.hpp:25,
+                 from svg_exporter.hpp:46,
+                 from svg_exporter.cpp:28:
+/usr/include/boost/tuple/detail/tuple_basic.hpp:81:7: note: candidates are: template<class T0, class T1, class T2, class T3, class T4, class T5, class T6, class T7, class T8, class T9> class boost::tuples::tuple
+ class tuple;
+       ^
+In file included from /usr/include/c++/5.2.0/bits/stl_algobase.h:64:0,
+                 from /usr/include/c++/5.2.0/bits/char_traits.h:39,
+                 from /usr/include/c++/5.2.0/ios:40,
+                 from /usr/include/c++/5.2.0/ostream:38,
+                 from /usr/include/c++/5.2.0/iostream:39,
+                 from svg_exporter.cpp:20:
+/usr/include/c++/5.2.0/bits/stl_pair.h:83:11: note:                 template<class ...> class std::tuple
+     class tuple;
+           ^
+In file included from exporter.hpp:37:0,
+                 from svg_exporter.hpp:47,
+                 from svg_exporter.cpp:28:
+board.hpp:105:17: error: ‘prep_t’ was not declared in this scope
+     map<string, prep_t> prepared_layers;
+                 ^
+board.hpp:105:23: error: template argument 2 is invalid
+     map<string, prep_t> prepared_layers;
+                       ^
+board.hpp:105:23: error: template argument 4 is invalid
+board.hpp:106:35: error: template argument 2 is invalid
+     map<string, shared_ptr<Layer> > layers;
+                                   ^
+board.hpp:106:35: error: template argument 4 is invalid
+board.hpp: In member function ‘double Board::get_layersnum()’:
+board.hpp:75:45: error: request for member ‘size’ in ‘((Board*)this)->Board::layers’, which is of non-class type ‘int’
+     double get_layersnum() {  return layers.size(); };
+                                             ^
+In file included from svg_exporter.hpp:47:0,
+                 from svg_exporter.cpp:28:
+exporter.hpp: At global scope:
+exporter.hpp:46:24: error: expected ‘)’ before ‘<’ token
+     Exporter(shared_ptr<Board> board)
+                        ^
+In file included from svg_exporter.cpp:28:0:
+svg_exporter.hpp:57:28: error: expected ‘)’ before ‘<’ token
+     SVG_Exporter(shared_ptr<Board> board);
+                            ^
+svg_exporter.hpp:74:5: error: reference to ‘shared_ptr’ is ambiguous
+     shared_ptr<Board> board;
+     ^
+In file included from /usr/include/boost/throw_exception.hpp:42:0,
+                 from /usr/include/boost/smart_ptr/shared_ptr.hpp:27,
+                 from /usr/include/boost/shared_ptr.hpp:17,
+                 from svg_exporter.hpp:34,
+                 from svg_exporter.cpp:28:
+/usr/include/boost/exception/exception.hpp:148:11: note: candidates are: template<class T> class boost::shared_ptr
+     class shared_ptr;
+           ^
+In file included from /usr/include/c++/5.2.0/bits/shared_ptr.h:52:0,
+                 from /usr/include/c++/5.2.0/memory:82,
+                 from /usr/include/boost/config/no_tr1/memory.hpp:21,
+                 from /usr/include/boost/smart_ptr/shared_ptr.hpp:23,
+                 from /usr/include/boost/shared_ptr.hpp:17,
+                 from svg_exporter.hpp:34,
+                 from svg_exporter.cpp:28:
+/usr/include/c++/5.2.0/bits/shared_ptr_base.h:345:11: note:                 template<class _Tp> class std::shared_ptr
+     class shared_ptr;
+           ^
+svg_exporter.cpp:38:27: error: expected constructor, destructor, or type conversion before ‘(’ token
+ SVG_Exporter::SVG_Exporter(shared_ptr<Board> board)
+                           ^
+svg_exporter.cpp: In member function ‘void SVG_Exporter::create_svg(std::string)’:
+svg_exporter.cpp:63:24: error: ‘board’ was not declared in this scope
+                        board->get_width() * dpi, board->get_height() * dpi);
+                        ^
+Makefile:563: recipe for target 'svg_exporter.o' failed
+make[2]: *** [svg_exporter.o] Error 1
+make[2]: Leaving directory '/home/pcb2gcode/pcb2gcode'
+Makefile:599: recipe for target 'all-recursive' failed
+make[1]: *** [all-recursive] Error 1
+make[1]: Leaving directory '/home/pcb2gcode/pcb2gcode'
+Makefile:438: recipe for target 'all' failed
+make: *** [all] Error 2
